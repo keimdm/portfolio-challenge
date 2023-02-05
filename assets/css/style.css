@@ -60,3 +60,16 @@ header ul li a {
     list-style: square;
 }
 
+.bio {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: skyblue;
+}
+
+.bio img {
+
+}
+
