@@ -89,6 +89,7 @@ h2 {
 
 .bio p {
     font-size: 1rem;
+    line-height: 1.25em;
     padding: 0 2.5em 2.5em 2.5em;
 }
 
@@ -139,8 +140,38 @@ h2 {
 
 .contact {
     background-color: lightgoldenrodyellow;
+    justify-content: start;
 }
 
 .contact h2 {
     padding: 0.5em 0 0 0.5em;
+    margin: 0 0 0.5em 0;
+}
+
+.contact .input-group {
+    margin: 0 2.5em 1em 2.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.contact .input-group input {
+    width: 100%;
+}
+
+.contact .input-group label {
+    padding: 0.25em 0 0 0;
+}
+
+.contact .input-group #message {
+    height: 10em;
+}
+
+.contact button {
+    line-height: 1.25em;
+    height: 2.5em;
+    width: 100px;
+    border-radius: 10px;
+    margin: 2.5em 0 0 0;
+    align-self: center;
 }
