@@ -6,7 +6,7 @@ html {
 header {
     width: 100%;
     position: fixed; 
-    background-color: lemonchiffon;
+    background-color: lightgoldenrodyellow;
 }
 
 header nav {
@@ -38,15 +38,18 @@ header ul li a {
     color: black;
 }
 
-.intro {
+section {
     height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+
+.intro {
     background-color: pink;
 }
 
-.hello {
+h2 {
     font-size: 5em;
     line-height: 1.25em;
     padding: 1.25em 0 0 0.5em;
@@ -61,15 +64,25 @@ header ul li a {
 }
 
 .bio {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
     background-color: skyblue;
 }
 
-.bio img {
-
+.bio h2 {
+    padding: 0.5em 0 0 0.5em;
 }
 
+.portfolio {
+    background-color: lightgreen;
+}
+
+.portfolio h2 {
+    padding: 0.5em 0 0 0.5em;
+}
+
+.contact {
+    background-color: lightgoldenrodyellow;
+}
+
+.contact h2 {
+    padding: 0.5em 0 0 0.5em;
+}
