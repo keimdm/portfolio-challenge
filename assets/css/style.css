@@ -38,6 +38,16 @@ header ul li a {
     color: black;
 }
 
+@media screen and (min-width: 480px) {
+    header ul {
+        justify-content: end;
+    }
+
+    header ul li a {
+        padding: 0 2em;
+    }
+}
+
 section {
     min-height: 100vh;
     width: 100%;
@@ -62,6 +72,13 @@ h2 {
     line-height: 1.25em;
     padding: 0 1.25em 2.5em 0;
     list-style: square;
+}
+
+@media screen and (min-width: 480px) {
+    .intro ul {
+        align-self: flex-start;
+        padding: 0 1.25em 2.5em 2em;
+    }
 }
 
 .bio {
@@ -92,6 +109,27 @@ h2 {
     font-size: 1rem;
     line-height: 1.25em;
     padding: 0 2.5em 2.5em 2.5em;
+}
+
+@media screen and (min-width: 480px) {
+    .bio {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .bio h2 {
+        width: 100%;
+    }
+
+    .photo-card {
+        flex: 1 1 200px;
+        max-width: 300px;
+    }
+
+    .bio p {
+        flex: 1 1 200px;
+        padding: 2.5em 2.5em 2.5em 2.5em;
+    }
 }
 
 .portfolio {
@@ -153,6 +191,26 @@ h2 {
     flex-direction: row;
     justify-content: end;
     align-items: center;
+}
+
+@media screen and (min-width: 480px) {
+    .portfolio {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .portfolio h2 {
+        width: 100%;
+    }
+
+    .card {
+        flex: 1 1 250px;
+    }
+
+    #card1 {
+        flex: 1 1 560px;
+    }
 }
 
 .contact {
