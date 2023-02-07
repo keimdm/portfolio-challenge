@@ -9,6 +9,7 @@ The Portfolio consists of 5 sections: a header, a home page, a bio, a work secti
 ## Usage
 
 Navigate to the deployed portfolio with the following link:
+https://keimdm.github.io/portfolio-challenge/
 
 ### Header
 The header consists of a thin bar at the top of the window with links to the other four sections of the portfolio. When the window width is greater than 768px, the bar disappears from the top of the window and larger links appear in the home page section. In that case, once the user scrolls past the home page section and the links are no longer visible, the regular header bar reappears for easy access to the links. 
