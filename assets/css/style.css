@@ -40,6 +40,12 @@ header ul li a {
     text-decoration-line: none;
     line-height: 2em;
     color: black;
+    transition: color 0.25s;
+}
+
+header ul li a:hover {
+    color: darkblue;
+    transition: color 0.25s;
 }
 
 /*header media queries*/
