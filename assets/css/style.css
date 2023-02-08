@@ -4,12 +4,22 @@ html {
     font-size: 16px;
 }
 
+:root {
+    --white: #fff;
+    --very-light: #FFF9EB;
+    --light: #FFEDC2;
+    --mid-warm: #EF476F;
+    --mid-cool: #2A4494;
+    --dark: #18020C;
+    --black: #000;
+}
+
 /*header properties*/
 header {
     width: 100%;
     position: fixed;
     top: 0rem;
-    background-color: lightgrey;
+    background-color: var(--mid-cool);
     z-index: 2;
 }
 
@@ -39,12 +49,12 @@ header ul {
 header ul li a {
     text-decoration-line: none;
     line-height: 2em;
-    color: black;
+    color: var(--white);
     transition: color 0.25s;
 }
 
 header ul li a:hover {
-    color: darkblue;
+    color: var(--mid-warm);
     transition: color 0.25s;
 }
 
@@ -74,7 +84,7 @@ section {
 }
 
 .intro {
-    background-color: pink;
+    background-color: var(--light);
 }
 
 .intro .column {
@@ -92,6 +102,12 @@ h2 {
     font-size: 5rem;
     line-height: 1.25em;
     padding: 1.25em 0 0 0.5em;
+    color: var(--dark);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#titleName {
+    color: var(--mid-warm);
 }
 
 #subtitle {
@@ -104,6 +120,7 @@ h2 {
     line-height: 1.25em;
     padding: 0 1.25em 4em 0;
     list-style: square;
+    color: var(--dark);
 }
 
 #spacer {
@@ -127,6 +144,7 @@ h2 {
         font-size: 1.25rem;
         line-height: 5em;
         font-style: italic;
+        color: var(--dark);
     }
     
     .intro ul {
@@ -149,7 +167,7 @@ h2 {
     }
 
     #intro2 p {
-        color: black;
+        color: var(--dark);
         transition: color 0.25s;
     }
 
@@ -158,14 +176,14 @@ h2 {
     }
 
     #intro2 p:hover {
-        color: darkblue;
+        color: var(--mid-warm);
         transition: color 0.25s;
     }
 }
 
 /*intro media query (desktop)*/
 @media screen and (min-width: 992px) {
-    .intro h2 {
+    h2 {
         font-size: 6rem;
     }
     
@@ -186,23 +204,24 @@ h2 {
 
 /*bio properties*/
 .bio {
-    background-color: skyblue;
+    background-color: var(--very-light);
 }
 
 .bio h2 {
     padding: 0.5em 0 0 0.5em;
     height: 140px;
+    color: var(--mid-warm);
 }
 
 .photo-card {
     margin: 2.5em 2.5em 2.5em 2.5em;
     padding: 1em;
     border-radius: 10px;
-    background-color: white;
+    background-color: var(--white);
     display: flex;
     flex-direction: row;
     justify-content: center;
-    box-shadow: 10px 10px 3px black;
+    box-shadow: 10px 10px 3px var(--dark);
     max-width: 350px;
     align-self: center;
 }
@@ -216,6 +235,7 @@ h2 {
     font-size: 1rem;
     line-height: 1.25em;
     padding: 0 2.5em 2.5em 2.5em;
+    color: var(--dark);
 }
 
 /*bio media query (tablet)*/
@@ -252,22 +272,23 @@ h2 {
 
 /*portfolio properties*/
 .portfolio {
-    background-color: lightgreen;
+    background-color: var(--light);
     padding: 0 0 2.5em 0;
 }
 
 .portfolio h2 {
     padding: 0.5em 0 0 0.5em;
+    color: var(--mid-warm);
 }
 
 .card {
     margin: 2.5em 2.5em 0 2.5em;
     min-height: 210px;  
-    background-color: white;
+    background-color: var(--white);
     border-radius: 10px;
     position: relative;
     padding: 1rem;
-    box-shadow: 10px 10px 3px black;
+    box-shadow: 10px 10px 3px var(--dark);
     transition: margin-bottom 0.25s;
 }
 
@@ -279,6 +300,7 @@ h2 {
 .card figcaption {
     font-size: 1.5rem;
     padding: 0.5em 0 0 0;
+    color: var(--dark);
 }
 
 .card .info-button {
@@ -287,7 +309,7 @@ h2 {
     position: absolute;
     top: 100%;
     left: 0rem;
-    background-color: darkblue;
+    background-color: var(--mid-cool);
     color: rgba(255, 255, 255, 0);
     border-radius: 10px;
     display: flex;
@@ -296,7 +318,7 @@ h2 {
     align-items: center;
     visibility: hidden;
     padding: 0 0.5em 0 0;   
-    box-shadow: 10px 10px 3px black; 
+    box-shadow: 10px 10px 3px var(--dark); 
     margin-bottom: 2.5rem;
     transition: height 0.25s, visibility 0s linear 0.25s, color 0.25s;
 }
@@ -347,7 +369,7 @@ h2 {
 
 /*contact properties*/
 .contact {
-    background-color: lightgoldenrodyellow;
+    background-color: var(--very-light);
     justify-content: start;
     padding: 0 0 2.5rem 0;
 }
@@ -355,6 +377,7 @@ h2 {
 .contact h2 {
     padding: 0.5em 0 0 0.5em;
     margin: 0 0 0.5em 0;
+    color: var(--mid-warm);
 }
 
 .contact .column {
@@ -376,6 +399,7 @@ h2 {
 
 .contact .input-group label {
     padding: 0.25em 0 0 0;
+    color: var(--dark);
 }
 
 .contact .input-group #message {
@@ -389,6 +413,7 @@ h2 {
     border-radius: 10px;
     margin: 2.5em 0 0 0;
     align-self: center;
+    color: var(--dark);
 }
 
 /*contact media query*/
@@ -415,10 +440,10 @@ h2 {
 /*footer properties*/
 footer {
     width: 100%;
-    background-color: lightgrey;
+    background-color: var(--mid-cool);
     z-index: 2;
     line-height: 2em;
-    color: black;
+    color: var(--white);
     display: flex;
     flex-direction: row;
     justify-content: center;
