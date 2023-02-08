@@ -118,8 +118,8 @@ h2 {
 
     #subtitle {
         display: block;
-        font-size: 1rem;
-        line-height: 6.25em;
+        font-size: 1.25rem;
+        line-height: 5em;
         font-style: italic;
     }
     
@@ -129,7 +129,7 @@ h2 {
 
     .intro .column {
         justify-content: flex-start;
-        padding: 0 0 0 5%; 
+        padding: 0 0 0 2.5rem; 
         align-items: flex-start;
     }
 
@@ -159,14 +159,17 @@ h2 {
 
 /*intro media query (desktop)*/
 @media screen and (min-width: 992px) {
+    .intro h2 {
+        font-size: 6rem;
+    }
+    
     #intro2 {
         font-size: 4rem;
         line-height: 1.5625em;
-        padding-right: 2em;
     }
 
     .intro .column {
-        align-items: center;
+        align-items: flex-start;
     }
 
     #subtitle {
